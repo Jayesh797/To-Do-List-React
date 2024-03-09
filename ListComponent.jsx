@@ -10,10 +10,10 @@ const ListComponent=(props)=>
     return (
         <>
         <div className="todo_style">
+            <li style={{textDecoration:line?"line-through":'none',flex: '1'}}>{props.text}</li>
             <span  onClick={Cutit}>
                 <DeleteIcon/>
             </span>
-            <li style={{textDecoration:line?"line-through":'none'}}>{props.text}</li>
         </div>
         </>
     )
